@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operadores Logicos</title>
+</head>
+<body>
+    <h1>operadores logicos </h1>
+
+    <script>
+
+        /*  && igual e igual: true
+            qualquer outro resultado é false
+
+            uma pessoa maior de 20 a 30 anos precisa ser contratada
+        */
+        
+        
+        var edade = 18
+        var edadeMaior = edade >= 20
+        var edadeMenor = edade <= 30
+
+        var entre = edadeMaior && edadeMenor
+
+        console.log("edade ",edade)
+        console.log("edade maior ",edadeMaior)
+        console.log("edade menor ",edadeMenor)
+        console.log("entre ",entre)
+
+        /*
+        || ou apenas um true e é true
+            uma pessoa menor e igual de 10 anos ou maior e igual a 65 anos podera receber sa gtuidade 
+        */
+
+        var edad = 18
+        var edadMax = edad >= 65
+        var edadMenor = edad <= 10
+
+        var gratuidade = edadMax || edadMenor 
+
+        console.log("edad" ,edad)
+        console.log("edad maior", edadMax)
+        console.log("edad menor ",edadMenor)
+        console.log("seleccionado ",gratuidade)
+    </script>
+</body>
+</html>
