@@ -31,7 +31,7 @@
 
         /*
         || ou apenas um true e é true
-            uma pessoa menor e igual de 10 anos ou maior e igual a 65 anos podera receber sa gtuidade 
+            uma pessoa menor e igual de 10 anos ou maior e igual a 65 anos podera receber sua gratuidade 
         */
 
         var edad = 18
@@ -43,7 +43,20 @@
         console.log("edad" ,edad)
         console.log("edad maior", edadMax)
         console.log("edad menor ",edadMenor)
-        console.log("seleccionado ",gratuidade)
+        console.log("tem direito para gratuidade? ",gratuidade)
+
+        /*  Negativo. é usado para negar ou contradecir um resultado.. mesmo seja verdadeiro.
+
+        com ! antes do elemento..
+        */
+
+        var edades = 35
+
+        var numMenor = !edades <= 18 // transforma false em true 
+        var numMaior = edades >18
+
+        console.log(numMenor)
+        console.log(numMaior)
     </script>
 </body>
 </html>
