@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos DOM</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <div id="titulo">
+            <h1>calculadora de soma</h1>
+        </div>
+        <article>
+            <input type="number" name="num1" id="num1">
+            <div id="soma">+</div>
+            <input type="number" name="num2" id="num2">
+            <input type="submit" value="sumar" onclick="soma()">
+            <div id="res">Resultado</div>
+
+        </article>
+    </main>
+    <script>
+    
+        function soma(){
+
+            var nu1 = document.getElementById('num1')
+            var nu2 = document.getElementById('num2')
+            var r = document.getElementById('res')
+            var n1 = Number(nu2.value)
+            var n2 = Number(nu2.value)
+            var s = n1 * n2
+
+            r.innerHTML = s
+        }
+
+    </script>
+</body>
+</html>
