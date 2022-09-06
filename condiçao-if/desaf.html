@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema d nacionalidade</title>
+</head>
+<body>
+    <h1>Questionario pessoal</h1>
+    Nacionalidade: <input type="text" name="nac" id="txtnac">
+    <input type="button" value="Enviar" onclick="verificar()">
+    <div id="res">resultado
+    </div>
+
+    <script>
+    
+        function verificar (){
+            var nac = document.getElementById('txtnac')
+            var n = (nac.value)
+            var r = document.getElementById('res')
+
+            if(n == 'brasil'){
+                r.innerHTML = 'voce é brasileiro'
+            }else{
+                r.innerHTML = 'voce é extrangeiro'
+            }
+            
+        }
+    </script>
+</body>
+</html>
