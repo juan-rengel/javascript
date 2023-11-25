@@ -7,55 +7,74 @@
     <title>Condicionais Switch</title>
 </head>
 <body>
-    <h1>condicionais Switch</h1>
-    <p>
+    <h1>condicionais Switch ou estrutura de decisão</h1>
+    <p> 
+        INDICADO PARA QUANDO SE TEM MUITAS OPÇOES PARA SER ANALISADA.. ENM VEZ DE USAR IF ELSE
         HACER LA EVALUACION DE NOTAS DE LOS ALUNOS Y CLASIFICAR SU ESTADO DEPENDIENDO SU NOTAS
     </p>
     <script>
 
-        var aluno = 'juan'
+       var aluno = "juan"
 
-        var n1 = 8.8
-        var n2 = 8.2
-        var n3 = 1.2
-        var n4 = 9.5
-        var n5 = 9.8
+       var n1 = 8.8
+       var n2 = 5.5
+       var n3 = 4.9
+       var n4 = 8.8
 
-        var media = (n1 + n2 + n3 + n4 + n5) / 5
+        var notaFinal = (n1 + n2 + n3 + n4) / 4
+        var resultado = ""
 
-        var resultado = ''
+       if (notaFinal >= 8){
+        resultado = "otimo"
+       }
 
-        if(media >= 7){
-            resultado = 'otimo'
-        }
-        else if(media >= 5){
-            resultado = 'regular'
-        }
-        else{
-            resultado = 'ruim'
-        }
-   switch(resultado){
+       else if (notaFinal > 8 && notaFinal >=5){
+        resultado = "regular"
+       }
 
-     
-            case 'otimo':
-                console.log(resultado , aluno)
-                console.log('sua nota é ' + media + ' parabens voce consigio adquirir os puntos necessarios')
-                break
+       else {
+        resultado = "ruim"
+       }
+
+       switch(resultado){
+
+        case "otimo":
+            console.log("Exelente voce é um excelente aluno.")
+            break
+
             
-            case 'regular':
-                console.log(resultado , aluno)
-                console.log('sua nota é ' + media +' parabens consiguio adquirir mais precisa se esforçar mais um poco')
-                break
-            
-            case 'ruim':
-                console.log(resultado , aluno)
-                console.log('sua nota é ' + media + ' voce nao consigui passar para a proxima turma')
-                break
+        case "regular":
+            console.log("Exelente voce é um excelente aluno.")
+            break
 
-            default:
-                console.log('disculpe houve um herror')
-                break
-        }
+        
+        case "ruim":
+            console.log("Exelente voce é um excelente aluno.")
+            break
+        
+        default: console.log("voce nao adiciono notas corretamente")
+            break
+       }
+
+
+        // OTRO EXEMPLO..
+      //  USAMOS A VARIAVEL OU ELEMENTO COMO CODICION PARA SWITCH PARA TER VARIAS OPCIONES
+
+    let colocacao = 1
+
+    switch(colocacao){
+        
+        case 1: console.log("primeiro lugar")
+        break
+
+        case 2: console.log("segundo lugar")
+        break
+
+        case 3: console.log("terceiro lugar")
+        break
+
+        default: console.log("no fue consedido nehum pedido")
+    }
         
     </script>
     

@@ -14,20 +14,21 @@
 
     /* no site de bedidas so pode comprar pessoas maiores de 18 anos. e apartir de 60 anos receve um desconto..*/
 
-        var edade = 59
+        var edade = 58
     
-        if( edade < 18){
-            console.log('Disculpe..! Não posso autorizarsua compra')
-        }
-
-        else if ( edade < 60){
-            console.log('Seja Bemvindo pode selecionar sua compra')
-        }
-
-        else{
-            console.log('parabems voce ganho o bonus de compra..!')
-        }
+        if (edade < 18) 
+            console.log('Disculpe..! Não posso autorizar sua compra')
         
+
+        else if (edade < 60) {
+            console.log('Seja Bemvindo pode seleccionar sua compra')
+            console.log('e volte sempre')
+        }
+
+        else
+            console.log('parabems voce ganho o bonus de compra..!')
+        
+        //OBSERVAÇAO: CUANDO TENEMOS 2 LINAS DE CODIGOS DENTRO DE UNA CONDIÇÃO ES OBLIGAÇÃO FECHAR BLOCO  IGUAL AL EXEMPLO DE ELSE IF
 
     </script>
 </body>
