@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Juntando todo hasta aqui</title>
+</head>
+<body>
+  <h1>Juntando todo hasta aqui</h1>
+
+  <script>
+    var nomes = ["juan","jose","rengel"];
+    var notaA = [9.2, 8.4, 8.5];
+    var notaB = [5.2, 4.8, 6.2];
+
+
+
+  function media(n1,n2){
+    return (n1+n2) / 2
+  }
+
+  function passou(media) {
+
+    if(media > 7){
+      return "Aprovado";
+    }else{
+      return "Reprovado";
+    }
+  }
+
+
+  
+  for(i in nomes){
+    var nota1 = notaA[i];
+    var nota2 = notaB[i];
+    var m = media(nota1,nota2);
+
+    console.log(nomes[i] + " - " + nota1  + " - " + nota2  + " - " + media(nota1 , nota2) + " - " + passou(m)) 
+
+  }
+
+  
+  </script>
+
+</body>
+</html>
