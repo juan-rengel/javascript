@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Objetos</title>
+</head>
+<body>
+  <h1> objetos</h1>
+  <p>Objetos é similar ao Array diferencia algumas caracteristicas como em vez de usar [ ] usa { } </p>
+</body>
+
+<script>
+  // o nome, edad é  uma variavel dentro do Objeto. só que dentro do objeto é chamado de Propiedade. uma das maneiras de chamar o a objeto pode ser pelo nome mesmo da propiedade explo: console.log(aluno["nome"]) é usado [] 
+
+//OBS Pode ser salvo na propiedade Array tambem ou mesmo objeto tudo o que vimos até agora
+
+var aluno = {
+    nome: "juan",
+    edad: 30,
+    nacionalidade: "venezuela",
+    notas: [7.1, 5.8]
+}
+
+// inserindo otra propiedade mesmo depoies de creada
+aluno.matricula = 12345; // sera adicionado ao objeto citado acima
+
+aluno["sobrenome"] = "rengel" // adicionando assim pode seer alterada futuramente melhor opçao
+
+console.log(aluno) //  accesando ao elemento dentro do meu Objeto
+console.log(aluno["nome"]) // chamando o valor da propie
+console.log(aluno["notas"][0]); //selecionando o index do array para chamar o elemento 
+
+
+// Al igual ao Arrey pode ser feita desta forma.
+var alunno = new Object();
+
+alunno.nome = "juan";
+alunno.edad = 30;
+console.log(alunno);
+</script>
+
+</html>

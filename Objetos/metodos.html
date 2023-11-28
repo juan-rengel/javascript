@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>metodos</title>
+</head>
+<body>
+    <h1>Objeto - metodos</h1>
+  <p>
+    a diferencia de propiedade o metodos sao funçoes 
+    <ul>
+      <li>cuando um objeto tem uma variavel se chama de propiedades</li>
+      <li>cuando um objeto tem uma funçao se chama de metodos</li>
+    </ul>
+
+  </p>
+    <script>
+
+      var aluno = {
+        nome: "juan",
+        notas: [9,8],
+
+        media: function (n1, n2){
+          return (n1 + n2) / 2;
+        }
+
+      }
+
+      console.log(aluno.nome)
+      console.log(aluno.media(aluno.notas[0], aluno.notas[1]));
+
+
+    </script>
+</body>
+</html>
